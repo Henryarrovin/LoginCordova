@@ -1,4 +1,3 @@
-
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 const loginStatus = document.getElementById('loginStatus');
@@ -8,7 +7,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const password = passwordInput.value;
     
     if (username === 'hen' && password === 'hen') {
-        loginStatus.textContent = 'Successful Login';
+        window.location.href = `welcome.html?username=${encodeURIComponent(username)}`;
     } else {
         loginStatus.textContent = 'Wrong Credentials';
     }
