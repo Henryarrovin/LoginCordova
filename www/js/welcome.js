@@ -1,4 +1,3 @@
-// welcome.js
 const welcomeUsername = document.getElementById('welcomeUsername');
 const welcomeLogoutBtn = document.getElementById('welcomeLogoutBtn');
 
